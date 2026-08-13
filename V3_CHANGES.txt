@@ -1,0 +1,8 @@
+EduPulse V3
+- Added EduPulse product name and browser title.
+- Rebuilt SQL Lab example-query experience.
+- Example query dropdown now loads SQL directly into the editor.
+- Added 8 working example analytics queries.
+- Added Custom Query mode.
+- Kept read-only SQL safety and result CSV download.
+- All V2 UI and CSV-upload features retained.

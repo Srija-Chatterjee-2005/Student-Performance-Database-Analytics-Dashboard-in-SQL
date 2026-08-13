@@ -1,0 +1,9 @@
+UI V2 fixes
+- Fixed Plotly donut crash by using px.pie(..., hole=...)
+- Replaced deprecated Streamlit use_container_width with width='stretch'
+- Added high-contrast light theme
+- Increased chart label/text visibility
+- Added visible feature strip
+- Improved metric cards and controls
+- Added robust quoted Windows launcher for paths containing spaces / &
+- Disabled Streamlit onboarding telemetry prompt

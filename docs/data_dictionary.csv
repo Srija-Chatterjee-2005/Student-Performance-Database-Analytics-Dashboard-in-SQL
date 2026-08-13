@@ -1,0 +1,20 @@
+column,description
+student_id,Unique student identifier
+student_name,Student full name
+department,Department full name
+department_code,Department short code
+semester,Academic semester
+course_code,Course short code
+course_name,Course title
+attendance_pct,Attendance percentage
+assignment_marks,Assignment score
+quiz_marks,Quiz score
+midterm_marks,Midterm score
+final_exam_marks,Final exam score
+average_score,Weighted academic average
+grade,Letter grade
+performance_category,Performance band
+risk_status,Early-warning risk category
+course_completion_status,Course completion status
+feedback_rating,Feedback rating from 1 to 5
+spi,Student Performance Index
