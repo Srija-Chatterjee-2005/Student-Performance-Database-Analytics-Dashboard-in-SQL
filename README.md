@@ -1,69 +1,132 @@
-# EduPulse — Student Performance Intelligence & Analytics
+🎓 EduPulse — Student Performance Database & Analytics Dashboard
 
-A complete portfolio-ready academic analytics project with a **light premium Streamlit UI**, bundled sample data, CSV upload mode, live KPI recalculation, SQLite database sync, SQL query lab, student risk analytics, and course performance views.
+A SQL-powered academic analytics system for monitoring student performance, attendance, course outcomes, SPI scores, and early-risk indicators through an interactive Streamlit dashboard.
 
-## What the project does
+📌 Project Overview
 
-The application starts with a realistic sample dataset so the dashboard works immediately. A user can then upload a CSV from the sidebar and the application automatically switches to the uploaded dataset for the current session. Calculated metrics such as average score, grade, performance category, risk status, course completion, and Student Performance Index (SPI) can be derived automatically.
+EduPulse is a portfolio-ready Student Performance Database & Analytics Dashboard designed to transform academic records into clear, actionable insights. The project combines SQL, Python, SQLite, Pandas, Plotly, and Streamlit to analyze student marks, attendance, course performance, grades, pass rates, and academic risk.
 
-## Main features
+The application launches with a realistic sample dataset and also supports CSV upload, allowing users to analyze their own compatible student dataset without modifying the source code. Dashboard KPIs and visualizations are recalculated automatically from the active data.
 
-- Executive academic overview
-- Student-level performance explorer
-- Course and department analytics
-- Early-warning / at-risk student center
-- Student Performance Index (SPI)
-- Attendance vs marks analytics
-- Grade distribution and pass-rate analytics
-- CSV upload with instant dashboard refresh
-- Downloadable CSV template
-- Download current live dataset
-- Read-only SQL Lab connected to the active dataset
-- SQLite database refreshed from the current dataset
-- Light, non-dark UI with pastel cards and charts
-- GitHub-ready project structure
+🎯 Project Objectives
 
-## Run on Windows
+Centralize student academic and attendance information in a structured database.
 
-1. Extract the ZIP.
-2. Open the project folder.
-3. Double-click `run_windows.bat`.
-4. If Windows asks for permission, allow Python/network access.
-5. Streamlit will open the project in your browser.
+Track student, course, and department-level performance.
 
-Alternative:
-```bash
-pip install -r requirements.txt
-streamlit run app/app.py
-```
+Calculate academic KPIs such as average score, attendance, pass rate, grade, and Student Performance Index (SPI).
 
-## Run on macOS/Linux
+Identify low-performing and at-risk students using rule-based early-warning analytics.
 
-```bash
-chmod +x run_mac_linux.sh
-./run_mac_linux.sh
-```
+Provide an interactive dashboard for easier academic monitoring and decision-making.
 
-## CSV upload format
+Demonstrate practical SQL analytics through an integrated SQL Lab.
 
-Minimum required columns:
+🛠️ Tools & Technologies Used
 
-`student_id, student_name, department, course_code, course_name, attendance_pct, assignment_marks, quiz_marks, midterm_marks, final_exam_marks`
+Technology
 
-The application can derive:
-- average_score
-- grade
-- performance_category
-- risk_status
-- course_completion_status
-- SPI
+Purpose
 
-See `data/upload_template.csv`.
+SQL / SQLite
 
-## Project structure
+Database storage, querying, aggregation, filtering, ranking, and analytics
 
-```text
-student_performance_analytics_project/
+Python
+
+Application logic and data processing
+
+Pandas
+
+Data cleaning, transformation, aggregation, and CSV processing
+
+Streamlit
+
+Interactive web application and dashboard UI
+
+Plotly
+
+Interactive charts and data visualizations
+
+CSV
+
+Sample dataset and real-time user data upload
+
+Git & GitHub
+
+Version control, documentation, and project hosting
+
+✨ Key Features
+
+📊 Executive Overview — students, courses, average score, attendance, pass rate, and at-risk KPIs.
+
+👩‍🎓 Student Explorer — individual student performance, attendance, SPI, grades, course results, and assessment profile.
+
+📚 Course Analytics — course averages, attendance, pass rates, SPI, student counts, and performance comparisons.
+
+⚠️ Early Warning Center — identifies Critical, High Risk, Medium Risk, and Low Risk students with intervention indicators.
+
+🎯 Student Performance Index (SPI) — combines academic performance, attendance, and feedback into a single analytical score.
+
+🧪 SQL Analytics Lab — ready-to-run example queries plus a custom read-only SQL editor.
+
+📁 Real-Time CSV Upload — upload a compatible dataset and refresh dashboard analytics automatically.
+
+🔄 Automatic Calculations — derives average score, grade, performance category, risk status, completion status, and SPI when applicable.
+
+🔍 Interactive Filters — filter analytics by department, course, and semester.
+
+⬇️ Download Options — download active datasets and SQL query results as CSV files.
+
+🎨 Light Responsive UI — clean pastel dashboard design with readable KPI cards, charts, tables, and navigation.
+
+📈 Analytics Logic
+
+Weighted Average Score
+
+Assessment
+
+Weight
+
+Assignment
+
+15%
+
+Quiz
+
+10%
+
+Midterm
+
+30%
+
+Final Exam
+
+45%
+
+Student Performance Index (SPI)
+
+Academic Score: 70%
+
+Attendance: 20%
+
+Feedback: 10%
+
+Early-Risk Classification
+
+🔴 Critical: Attendance below 60% and average score below 40.
+
+🟠 High Risk: Attendance below 70% or average score below 50.
+
+🟡 Medium Risk: Attendance below 80% or average score below 60.
+
+🟢 Low Risk: Student does not meet the above risk conditions.
+
+📁 Project Structure
+
+Student-Performance-Database-Analytics-Dashboard-in-SQL/
+├── .streamlit/
+│   └── config.toml
 ├── app/
 │   └── app.py
 ├── data/
@@ -71,52 +134,151 @@ student_performance_analytics_project/
 │   └── upload_template.csv
 ├── database/
 │   └── schema.sql
+├── docs/
+│   └── data_dictionary.csv
+├── images/
 ├── sql/
 │   └── analytics_queries.sql
-├── assets/
-├── docs/
-├── screenshots/
+├── .gitignore
+├── LICENSE
+├── README.md
 ├── requirements.txt
 ├── run_windows.bat
-├── run_mac_linux.sh
-└── README.md
-```
+└── run_mac_linux.sh
 
-## Analytics logic
+📤 How to Upload Your Own CSV
 
-**Average Score**
-- Assignment: 15%
-- Quiz: 10%
-- Midterm: 30%
-- Final exam: 45%
+Launch the EduPulse dashboard.
 
-**Student Performance Index (SPI)**
-- Academic score: 70%
-- Attendance: 20%
-- Feedback score: 10%
+Open the CSV Upload option in the sidebar.
 
-**Risk classification**
-- Critical: attendance < 60 and average score < 40
-- High Risk: attendance < 70 or average score < 50
-- Medium Risk: attendance < 80 or average score < 60
-- Low Risk: otherwise
+Download data/upload_template.csv if you need the expected structure.
 
-## Portfolio talking point
+Prepare your student dataset using the required column names.
 
-> This project centralizes student assessment and attendance data, generates academic KPIs, identifies at-risk students using rule-based early-warning logic, and presents actionable insights through a live interactive dashboard. It also supports user-uploaded CSV data so the analytics can be regenerated for new academic datasets without modifying the source code.
+Upload the CSV file.
 
-## Recommended GitHub repository name
+EduPulse validates the data and switches from the example dataset to the uploaded dataset.
 
-`student-performance-intelligence-dashboard`
+Dashboard KPIs, charts, risk analysis, and student/course analytics update automatically.
 
-## Suggested repository description
+Minimum Required Columns
 
-`SQL + Streamlit academic analytics system for student performance, attendance, course outcomes, SPI scoring and early-risk detection with live CSV upload.`
+student_id, student_name, department, course_code, course_name,
+attendance_pct, assignment_marks, quiz_marks, midterm_marks,
+final_exam_marks
 
+🧪 SQL Analytics Included
 
-## V3 update
-- EduPulse product branding
-- Functional SQL example-query selector
-- Example SQL automatically loads into the editor
-- Custom Query mode
-- Read-only SQL execution and CSV result download
+The SQL portion demonstrates practical concepts including:
+
+SELECT, WHERE, ORDER BY
+
+GROUP BY and HAVING
+
+Aggregate functions: AVG, COUNT, SUM, MIN, MAX
+
+CASE statements
+
+Common Table Expressions (CTEs)
+
+Window functions such as DENSE_RANK()
+
+Student ranking
+
+Department and course performance analysis
+
+Pass-rate analysis
+
+Low-attendance and at-risk student identification
+
+The SQL Lab also lets users select prepared analytics queries or write custom read-only queries and download the results.
+
+🖼️ Screenshots / Output
+
+Add dashboard screenshots to the images/ folder and display them here after uploading them to GitHub.
+
+Suggested screenshots:
+
+📊 Executive Overview
+
+👩‍🎓 Student Explorer
+
+📚 Course Analytics
+
+⚠️ Early Warning Center
+
+🧪 SQL Analytics Lab
+
+📁 CSV Upload & Live Data View
+
+![Executive Overview](images/executive_overview.png)
+![Student Explorer](images/student_explorer.png)
+![Course Analytics](images/course_analytics.png)
+![Early Warning Center](images/early_warning_center.png)
+![SQL Lab](images/sql_lab.png)
+
+💡 Project Outcome
+
+EduPulse demonstrates how raw academic records can be converted into a structured database and then into meaningful analytical insights. The system helps identify performance trends, compare courses and departments, monitor attendance, rank students, and highlight learners who may require early academic intervention.
+
+From a portfolio perspective, the project demonstrates SQL querying, database concepts, data analysis, KPI design, Python-based analytics, interactive visualization, and dashboard development in one end-to-end application.
+
+🚀 How to Run the Project
+
+Windows
+
+Download or clone the repository.
+
+Open the project folder.
+
+Double-click run_windows.bat.
+
+Wait for the required packages to install.
+
+EduPulse will open automatically in your browser.
+
+Alternative command:
+
+pip install -r requirements.txt
+streamlit run app/app.py
+
+macOS / Linux
+
+chmod +x run_mac_linux.sh
+./run_mac_linux.sh
+
+🎥 Project Run & Demo Video
+
+A screen recording showing how to launch and use the complete project will be added here.
+
+🎥 Video:
+[Paste screen-recording/video link here]
+
+⬆️ GitHub Upload Steps
+
+Open Command Prompt or Terminal inside the project folder and run:
+
+git init
+git branch -M main
+git add .
+git commit -m "Add Student Performance Database and Analytics Dashboard"
+git remote add origin YOUR_GITHUB_REPOSITORY_URL
+git pull origin main --rebase
+git push -u origin main
+
+Replace YOUR_GITHUB_REPOSITORY_URL with your repository URL.
+
+For future updates:
+
+git add .
+git commit -m "Update project"
+git push
+
+👩‍💻 Author
+
+Srija Chatterjee
+
+LinkedIn:
+
+GitHub: https://github.com/Srija-Chatterjee-2005
