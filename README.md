@@ -45,19 +45,19 @@ Demonstrate practical SQL analytics through an integrated SQL Lab.
 ## **🛠️C. Tools & Technologies Used**
 ---
 
-### **SQL / SQLite** : Database storage, querying, aggregation, filtering, ranking, and analytics
+**SQL / SQLite** : Database storage, querying, aggregation, filtering, ranking, and analytics
 
-### **Python** : Application logic and data processing
+**Python** : Application logic and data processing
 
-### **Pandas** : Data cleaning, transformation, aggregation, and CSV processing
+**Pandas** : Data cleaning, transformation, aggregation, and CSV processing
 
-### **Streamlit** : Interactive web application and dashboard UI
+**Streamlit** : Interactive web application and dashboard UI
 
-### **Plotly** : Interactive charts and data visualizations
+**Plotly** : Interactive charts and data visualizations
 
-### **CSV** : Sample dataset and real-time user data upload
+**CSV** : Sample dataset and real-time user data upload
 
-### **Git & GitHub** : Version control, documentation, and project hosting
+**Git & GitHub** : Version control, documentation, and project hosting
 
 
 <img width="1919" height="918" alt="Screenshot 2026-08-14 012356" src="https://github.com/user-attachments/assets/9daa598c-1ce5-4bc3-8f3d-9c4db1d3cfba" />
@@ -99,29 +99,19 @@ Demonstrate practical SQL analytics through an integrated SQL Lab.
 ## **📈E. Analytics Logic**
 ---
 
-Weighted Average Score
+### **Weighted Average Score**
 
-Assessment
+Assessment ---------- Weight
 
-Weight
+Assignment ---------- 15%
 
-Assignment
+Quiz ---------------- 10%
 
-15%
+Midterm ------------- 30%
 
-Quiz
+Final Exam --------- 45%
 
-10%
-
-Midterm
-
-30%
-
-Final Exam
-
-45%
-
-Student Performance Index (SPI)
+### **Student Performance Index (SPI)**
 
 Academic Score: 70%
 
@@ -129,7 +119,7 @@ Attendance: 20%
 
 Feedback: 10%
 
-Early-Risk Classification
+### **Early-Risk Classification**
 
 🔴 Critical: Attendance below 60% and average score below 40.
 
@@ -148,27 +138,11 @@ Early-Risk Classification
 ## **📁F. Project Structure**
 ---
 
-Student-Performance-Database-Analytics-Dashboard-in-SQL/
-├── .streamlit/
-│   └── config.toml
-├── app/
-│   └── app.py
-├── data/
-│   ├── student_performance_sample.csv
-│   └── upload_template.csv
-├── database/
-│   └── schema.sql
-├── docs/
-│   └── data_dictionary.csv
-├── images/
-├── sql/
-│   └── analytics_queries.sql
-├── .gitignore
-├── LICENSE
-├── README.md
-├── requirements.txt
-├── run_windows.bat
-└── run_mac_linux.sh
+
+
+<img width="594" height="782" alt="image" src="https://github.com/user-attachments/assets/774d19a4-812b-4625-9599-d61581af6a76" />
+
+
 
 ---
 
