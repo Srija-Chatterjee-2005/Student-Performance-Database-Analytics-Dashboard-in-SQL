@@ -224,6 +224,12 @@ The SQL Lab also lets users select prepared analytics queries or write custom re
 
 
 
+
+https://github.com/user-attachments/assets/5edd744c-16ad-4db6-8e02-4da3869e8db4
+
+
+
+
 ---
 
 ## **⬆️J. GitHub Upload Steps**
